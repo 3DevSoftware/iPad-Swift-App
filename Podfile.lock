@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.7.3)
+  - DropDown (2.3.6)
+  - ReachabilitySwift (4.2.1)
+  - SAMKeychain (1.5.3)
+  - Spring (1.0.5)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DropDown (~> 2.3.3)
+  - ReachabilitySwift
+  - SAMKeychain
+  - Spring
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DropDown: e8bfbce001b2e6b7e8abfdd42e12b565712d84f4
+  ReachabilitySwift: 35720ffea59c1c76d15f885be77fd33e33985427
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 7a35cd2fa30a8ca4e2671759e6ee3d8f8b1e2cf0
+
+COCOAPODS: 1.4.0

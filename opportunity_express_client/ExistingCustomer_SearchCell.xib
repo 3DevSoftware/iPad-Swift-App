@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="ExistingCustomer_SearchCell" customModule="opportunity_express_client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-Oa-gnQ">
+                        <rect key="frame" x="167" y="8" width="266" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="RHs-W2-DcS">
+                        <rect key="frame" x="8" y="8" width="118" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="Wvz-aK-Nit"/>
+                            <constraint firstAttribute="height" constant="25" id="fW0-yx-bnh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SearchCompanyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-R9-z2D">
+                        <rect key="frame" x="134" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="4ew-Mi-lMC"/>
+                            <constraint firstAttribute="width" constant="25" id="WEf-CN-bC5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NCe-R9-z2D" firstAttribute="leading" secondItem="RHs-W2-DcS" secondAttribute="trailing" constant="8" id="194-pH-4RM"/>
+                    <constraint firstItem="y9a-Oa-gnQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2Rb-zU-RmT"/>
+                    <constraint firstItem="y9a-Oa-gnQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Cor-4A-0bG"/>
+                    <constraint firstItem="y9a-Oa-gnQ" firstAttribute="leading" secondItem="NCe-R9-z2D" secondAttribute="trailing" constant="8" id="Iv7-cC-0Ke"/>
+                    <constraint firstItem="RHs-W2-DcS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Zgz-ZL-VoX"/>
+                    <constraint firstItem="RHs-W2-DcS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="kxP-4I-Ahn"/>
+                    <constraint firstItem="NCe-R9-z2D" firstAttribute="leading" secondItem="RHs-W2-DcS" secondAttribute="trailing" constant="8" id="nHH-r1-pvZ"/>
+                    <constraint firstItem="y9a-Oa-gnQ" firstAttribute="leading" secondItem="NCe-R9-z2D" secondAttribute="trailing" constant="8" id="zAB-Ua-XDZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SearchLabel" destination="y9a-Oa-gnQ" id="W90-6c-tbT"/>
+                <outlet property="statusLabel" destination="RHs-W2-DcS" id="dp3-Id-MfX"/>
+                <outlet property="statusWidth" destination="Wvz-aK-Nit" id="fQv-4W-xVb"/>
+                <outlet property="typeView" destination="NCe-R9-z2D" id="WpQ-gu-QaN"/>
+            </connections>
+            <point key="canvasLocation" x="-325" y="119"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SearchCompanyIcon" width="25" height="25"/>
+    </resources>
+</document>
